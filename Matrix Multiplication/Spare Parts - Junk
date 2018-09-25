@@ -1,0 +1,90 @@
+This is an array of junk that I threw out, but I hold onto because I worry I may
+someday use them. I'm wierd with these things and I'm sorry.
+
+//Printing result matrix
+    // int result[r1][c1]; // To store result
+    // int i, j;
+    // multiply(matrix1, matrix2, result);
+ 
+    // printf("Result matrix is \n");
+    // for (i = 0; i < 2; i++)
+    // {
+    //     for (j = 0; j < 2; j++)
+    //        printf("%d ", result[i][j]);
+    //     printf("\n");
+    // }
+
+
+//Multiply Matrix
+// 	int mat2[10][10];
+//     int i, j, k;
+
+//     for (i = 0; i < 2; i++)
+//     {
+//         for (j = 0; j < 2; j++)
+//         {
+//             res[i][j] = 0;
+//             for (k = 0; k < 2; k++)
+//                 res[i][j] += mat1[i][k]*mat2[k][j];
+//         }
+//     }
+
+
+void multiply(int grid1[])
+{
+	int r1=5;
+	int r2=5;
+	int c1=5;
+	int c2=5;
+	int i=0;
+ 	int mat1[10][10];
+// 	int mat2[10][10];
+//     int i, j, k;
+
+//     for (i = 0; i < 2; i++)
+//     {
+//         for (j = 0; j < 2; j++)
+//         {
+//             res[i][j] = 0;
+//             for (k = 0; k < 2; k++)
+//                 res[i][j] += mat1[i][k]*mat2[k][j];
+//         }
+//     }
+	for(int x=0;x<r1;x++)
+	{
+		for(int y=0;x<c1;c1++)
+		{
+			mat1[x][y]=grid1[i];
+			i++;
+			printf("%d ", mat1[x][y]);
+		}
+		printf("\n");
+	}
+}
+
+{
+	int i=0;
+	int matrix1[10][10];
+	int matrix2[10][10];
+	for(int x=0;x<r1;x++)
+	{
+		for(int y=0;y<c1;y++)
+		{
+			matrix1[x][y]=grid1[i];
+			printf("%d ", matrix1[x][y]);
+			i++;
+		}
+		printf("\n");
+	}
+	i=0;
+	for(int x=0;x<r2;x++)
+	{
+		for(int y=0;y<c2;y++)
+		{
+			matrix2[x][y]=grid2[i];
+			printf("%d ", matrix2[x][y]);
+			i++;
+		}
+		printf("\n");
+	}
+}
